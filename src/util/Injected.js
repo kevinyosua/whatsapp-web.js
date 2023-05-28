@@ -92,7 +92,7 @@ exports.ExposeStore = (moduleRaidStr) => {
 
     const _features = window.mR.findModule('FEATURE_CHANGE_EVENT')[0];
     if(_features) {
-        window.Store.Features = _features.LegacyPhoneFeatures;
+        window.Store.Features = _features?.LegacyPhoneFeatures;
     }
 };
 
